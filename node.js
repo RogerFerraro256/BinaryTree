@@ -1,5 +1,5 @@
 
-
+//creates the fucking node
 function Node(value,x,y) {
     this.value = value;
     this.left = null;
@@ -10,6 +10,7 @@ function Node(value,x,y) {
 
 }
 
+//help with searching the value, returning the node.
 Node.prototype.search = function (value) {
     if (this.value == value) {
         return this;
@@ -23,7 +24,7 @@ Node.prototype.search = function (value) {
 
 }
  
-
+//this will add the value and draw in the dumb graphic view
 Node.prototype.visit = function (parent) {
     if (this.left != null) {
         this.left.visit(this);
@@ -52,6 +53,7 @@ Node.prototype.visit = function (parent) {
 
 }
 
+//this will create the new node and put it in place
 Node.prototype.addNode = function (n) {
 
 

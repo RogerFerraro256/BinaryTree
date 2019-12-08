@@ -9,7 +9,9 @@ function setup() {
   
   tree = new Tree();
   
-  for(var i = 0;i<10;i++){
+
+  //just add the damn nodes
+  for(var i = 0;i<100;i++){
     tree.addNode(floor(random(0,100)));
   }
 
